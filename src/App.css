@@ -1,38 +1,54 @@
+html {
+  background-color: #d7daf5;
+}
+
 .App {
+  background-color: #b19cd9;
+  min-height: 650px;
+  width: 650px;
+  margin:40px auto;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+.top h1 {
   text-align: center;
+  font-size: 40px;
+  background-color: #d7daf5;
+  padding-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#to-do-form input {
+  background-color: #dff7f5;
+  border:none;
+  width: 470px;
+  height:70px;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 0 20px;
+  color: black;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
+}
+#to-do-form button {
+  background-color: #8565c4;
+  width: 80px;
+  height:70px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#to-do-form input::placeholder {
+  color: #B0B0B0;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#to-do-form input:focus {
+  outline:none;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#to-do-form button:focus {
+  outline:none;
 }
